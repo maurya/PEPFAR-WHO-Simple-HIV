@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="494077da-d932-4b44-9edb-01e91393548c"/>
+  <id value="08399522-9b36-4d8b-8a5d-a6c99cd3019e"/>
   <meta>
-    <lastUpdated value="2021-04-13T10:27:50.071-04:00"/>
+    <lastUpdated value="2021-05-04T11:59:09.021-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://regenstrief.org/fhir/ValueSet/ARTStartTypeValues"/>
     <resource>
       <ValueSet>
-        <id value="ARTStartTypeValues"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-HIVExtendedCodes.html">HIV Extended Codes v0.1.0 (CodeSystem)</a>
-            </p>
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
-              <a href="CodeSystem-HIVExtendedCodes.html">
-                <code>http://regenstrief.org/fhir/CodeSystem/HIVExtendedCodes</code>
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
               </a>
             </p>
             <table class="codes">
@@ -37,65 +33,64 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---regenstrief.org-fhir-CodeSystem-HIVExtendedCodes-First-time"> </a>
-                  <a href="CodeSystem-HIVExtendedCodes.html#HIVExtendedCodes-First-time">First-time</a>
+                  <a name="http---snomed.info-sct-165816005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=165816005">165816005</a>
                 </td>
-                <td>First-time user of ART</td>
-                <td>Client is ART naive, having never taken ART to treat HIV before</td>
+                <td>Human immunodeficiency virus infection (disorder)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---regenstrief.org-fhir-CodeSystem-HIVExtendedCodes-Restarting"> </a>
-                  <a href="CodeSystem-HIVExtendedCodes.html#HIVExtendedCodes-Restarting">Restarting</a>
+                  <a name="http---snomed.info-sct-165815009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=165815009">165815009</a>
                 </td>
-                <td>Restarting ART</td>
-                <td>Client is restarting ART after stopping treatment for any reason</td>
+                <td>Human immunodeficiency virus negative (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-419984006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419984006">419984006</a>
+                </td>
+                <td>Inconclusive (qualifier value)</td>
+                <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://regenstrief.org/fhir/ValueSet/ARTStartTypeValues"/>
-        <version value="0.1.0"/>
-        <name value="ARTStartTypeValues"/>
-        <title value="ART Start Type values"/>
         <status value="active"/>
-        <date value="2021-04-13T10:27:50-04:00"/>
-        <contact>
-          <name value="Joseph Amlung"/>
-          <telecom>
-            <system value="email"/>
-            <value value="jamlung@regenstrief.org"/>
-          </telecom>
-        </contact>
-        <description value="Codes describing whether the client is ART naive or is restarting ART"/>
         <expansion>
-          <identifier value="urn:uuid:0193ad75-9a7f-424c-9ad6-d5c5d0fcd23e"/>
-          <timestamp value="2021-04-13T10:28:14-04:00"/>
-          <total value="2"/>
+          <identifier value="urn:uuid:c10a08c1-1950-434f-a3f2-f039df620e87"/>
+          <timestamp value="2021-04-30T14:36:13.730Z"/>
           <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://regenstrief.org/fhir/CodeSystem/HIVExtendedCodes|0.1.0"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
           </parameter>
           <contains>
-            <system value="http://regenstrief.org/fhir/CodeSystem/HIVExtendedCodes"/>
-            <code value="First-time"/>
-            <display value="First-time user of ART"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="165816005"/>
+            <display value="Human immunodeficiency virus infection (disorder)"/>
           </contains>
           <contains>
-            <system value="http://regenstrief.org/fhir/CodeSystem/HIVExtendedCodes"/>
-            <code value="Restarting"/>
-            <display value="Restarting ART"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="165815009"/>
+            <display value="Human immunodeficiency virus negative (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419984006"/>
+            <display value="Inconclusive (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://regenstrief.org/fhir/ValueSet/HIVGender"/>
+    <fullUrl value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVGender"/>
     <resource>
       <ValueSet>
         <id value="HIVGender"/>
@@ -166,12 +161,12 @@
             </table>
           </div>
         </text>
-        <url value="http://regenstrief.org/fhir/ValueSet/HIVGender"/>
+        <url value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVGender"/>
         <version value="0.1.0"/>
         <name value="HIVGender"/>
         <title value="Gender values"/>
         <status value="active"/>
-        <date value="2021-04-13T10:27:50-04:00"/>
+        <date value="2021-05-04T11:59:09-04:00"/>
         <contact>
           <name value="Joseph Amlung"/>
           <telecom>
@@ -181,8 +176,8 @@
         </contact>
         <description value="Codes describing the gender of the client"/>
         <expansion>
-          <identifier value="urn:uuid:4e5bd4b4-d83c-4ef5-a1d2-91850384f14c"/>
-          <timestamp value="2021-04-13T10:28:15-04:00"/>
+          <identifier value="urn:uuid:15809361-06f6-4cb7-a724-cdd0a191fe5b"/>
+          <timestamp value="2021-05-04T11:59:19-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -223,89 +218,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="12271241000119109"/>
             <display value="Transgender identity (finding)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
-            <p>All codes from system 
-              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
-                <code>http://snomed.info/sct</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-165816005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=165816005">165816005</a>
-                </td>
-                <td>Human immunodeficiency virus infection (disorder)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-165815009"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=165815009">165815009</a>
-                </td>
-                <td>Human immunodeficiency virus negative (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-419984006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419984006">419984006</a>
-                </td>
-                <td>Inconclusive (qualifier value)</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <status value="active"/>
-        <expansion>
-          <identifier value="urn:uuid:a108fb5f-1ac4-45f1-aed8-fc021ef9571c"/>
-          <timestamp value="2021-04-02T16:50:41.279Z"/>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="165816005"/>
-            <display value="Human immunodeficiency virus infection (disorder)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="165815009"/>
-            <display value="Human immunodeficiency virus negative (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="419984006"/>
-            <display value="Inconclusive (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -381,8 +293,8 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:c00aea43-3c43-4e96-8d05-180658f4deec"/>
-          <timestamp value="2021-04-02T17:13:08.104Z"/>
+          <identifier value="urn:uuid:8cc976bf-a497-4282-8692-cd7e831d8a8f"/>
+          <timestamp value="2021-04-30T14:36:18.370Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -421,10 +333,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://regenstrief.org/fhir/ValueSet/VLReasonValues"/>
+    <fullUrl value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/ARTStartTypeValues"/>
     <resource>
       <ValueSet>
-        <id value="VLReasonValues"/>
+        <id value="ARTStartTypeValues"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -434,7 +346,7 @@
             </p>
             <p>All codes from system 
               <a href="CodeSystem-HIVExtendedCodes.html">
-                <code>http://regenstrief.org/fhir/CodeSystem/HIVExtendedCodes</code>
+                <code>https://github.com/maurya/PEPFAR-WHO-Simple-HIV/CodeSystem/HIVExtendedCodes</code>
               </a>
             </p>
             <table class="codes">
@@ -451,7 +363,95 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---regenstrief.org-fhir-CodeSystem-HIVExtendedCodes-Routine"> </a>
+                  <a name="https---github.com-maurya-PEPFAR-WHO-Simple-HIV-CodeSystem-HIVExtendedCodes-First-time"> </a>
+                  <a href="CodeSystem-HIVExtendedCodes.html#HIVExtendedCodes-First-time">First-time</a>
+                </td>
+                <td>First-time user of ART</td>
+                <td>Client is ART naive, having never taken ART to treat HIV before</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-maurya-PEPFAR-WHO-Simple-HIV-CodeSystem-HIVExtendedCodes-Restarting"> </a>
+                  <a href="CodeSystem-HIVExtendedCodes.html#HIVExtendedCodes-Restarting">Restarting</a>
+                </td>
+                <td>Restarting ART</td>
+                <td>Client is restarting ART after stopping treatment for any reason</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/ARTStartTypeValues"/>
+        <version value="0.1.0"/>
+        <name value="ARTStartTypeValues"/>
+        <title value="ART Start Type values"/>
+        <status value="active"/>
+        <date value="2021-05-04T11:59:09-04:00"/>
+        <contact>
+          <name value="Joseph Amlung"/>
+          <telecom>
+            <system value="email"/>
+            <value value="jamlung@regenstrief.org"/>
+          </telecom>
+        </contact>
+        <description value="Codes describing whether the client is ART naive or is restarting ART"/>
+        <expansion>
+          <identifier value="urn:uuid:75c96e71-adb5-4229-803c-b9fda1425684"/>
+          <timestamp value="2021-05-04T11:59:21-04:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/CodeSystem/HIVExtendedCodes|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/CodeSystem/HIVExtendedCodes"/>
+            <code value="First-time"/>
+            <display value="First-time user of ART"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/CodeSystem/HIVExtendedCodes"/>
+            <code value="Restarting"/>
+            <display value="Restarting ART"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/VLReasonValues"/>
+    <resource>
+      <ValueSet>
+        <id value="VLReasonValues"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-HIVExtendedCodes.html">HIV Extended Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-HIVExtendedCodes.html">
+                <code>https://github.com/maurya/PEPFAR-WHO-Simple-HIV/CodeSystem/HIVExtendedCodes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-maurya-PEPFAR-WHO-Simple-HIV-CodeSystem-HIVExtendedCodes-Routine"> </a>
                   <a href="CodeSystem-HIVExtendedCodes.html#HIVExtendedCodes-Routine">Routine</a>
                 </td>
                 <td>Routine viral load test</td>
@@ -459,7 +459,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---regenstrief.org-fhir-CodeSystem-HIVExtendedCodes-Targeted"> </a>
+                  <a name="https---github.com-maurya-PEPFAR-WHO-Simple-HIV-CodeSystem-HIVExtendedCodes-Targeted"> </a>
                   <a href="CodeSystem-HIVExtendedCodes.html#HIVExtendedCodes-Targeted">Targeted</a>
                 </td>
                 <td>Targeted viral load monitoring</td>
@@ -468,12 +468,12 @@
             </table>
           </div>
         </text>
-        <url value="http://regenstrief.org/fhir/ValueSet/VLReasonValues"/>
+        <url value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/VLReasonValues"/>
         <version value="0.1.0"/>
         <name value="VLReasonValues"/>
         <title value="Reason for HIV viral load test values"/>
         <status value="active"/>
-        <date value="2021-04-13T10:27:50-04:00"/>
+        <date value="2021-05-04T11:59:09-04:00"/>
         <contact>
           <name value="Joseph Amlung"/>
           <telecom>
@@ -483,8 +483,8 @@
         </contact>
         <description value="Codes describing the reason for HIV viral load test"/>
         <expansion>
-          <identifier value="urn:uuid:8dd76f6a-37db-419c-ab77-8d18e6bc3972"/>
-          <timestamp value="2021-04-13T10:28:15-04:00"/>
+          <identifier value="urn:uuid:7bd36d91-1b06-4b65-a709-50d181891f3d"/>
+          <timestamp value="2021-05-04T11:59:21-04:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -492,15 +492,15 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://regenstrief.org/fhir/CodeSystem/HIVExtendedCodes|0.1.0"/>
+            <valueUri value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/CodeSystem/HIVExtendedCodes|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://regenstrief.org/fhir/CodeSystem/HIVExtendedCodes"/>
+            <system value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/CodeSystem/HIVExtendedCodes"/>
             <code value="Routine"/>
             <display value="Routine viral load test"/>
           </contains>
           <contains>
-            <system value="http://regenstrief.org/fhir/CodeSystem/HIVExtendedCodes"/>
+            <system value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/CodeSystem/HIVExtendedCodes"/>
             <code value="Targeted"/>
             <display value="Targeted viral load monitoring"/>
           </contains>

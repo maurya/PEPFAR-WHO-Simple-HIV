@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://regenstrief.org/fhir/StructureDefinition/Observation-HIV-Status> a fhir:StructureDefinition;
+<https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-HIV-Status> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Observation-HIV-Status"];
   fhir:DomainResource.text [
@@ -22,12 +22,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://regenstrief.org/fhir/StructureDefinition/Observation-HIV-Status"];
+  fhir:StructureDefinition.url [ fhir:value "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-HIV-Status"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "Observation_HIV_Status"];
   fhir:StructureDefinition.title [ fhir:value "Observation - HIV Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-04-13T10:27:50-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-05-04T11:59:09-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Joseph Amlung" ];
@@ -1441,8 +1441,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://regenstrief.org/fhir/ValueSet/HIVStatusValues";
-           fhir:link <http://regenstrief.org/fhir/ValueSet/HIVStatusValues>
+           fhir:value "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVStatusValues";
+           fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVStatusValues>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -3012,8 +3012,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://regenstrief.org/fhir/ValueSet/HIVStatusValues";
-           fhir:link <http://regenstrief.org/fhir/ValueSet/HIVStatusValues>
+           fhir:value "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVStatusValues";
+           fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVStatusValues>
          ]
        ]
      ]
@@ -3021,7 +3021,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://regenstrief.org/fhir/StructureDefinition/Observation-HIV-Status.ttl> a owl:Ontology;
+<https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-HIV-Status.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

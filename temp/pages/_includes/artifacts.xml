@@ -16,6 +16,12 @@
       <li>
          <a href="#4">Terminology: Code Systems</a>
       </li>
+      <li>
+         <a href="#5">Knowledge Artifacts: Libraries</a>
+      </li>
+      <li>
+         <a href="#6">Knowledge Artifacts: Measure</a>
+      </li>
    </ul>
 </div>
 <div xmlns:html="http://www.w3.org/1999/xhtml"
@@ -169,6 +175,116 @@
                      title="CodeSystem/HIVExtendedCodes">HIV Extended Codes</a>
                </td>
                <td>{% capture desc %}Codes defined only in this Implementation Guide and require mapping to a standard semantic terminology.{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Knowledge Artifacts: Libraries </h3>
+   <p>{% capture grouping_desc %}These define logic, asset collections and other libraries as part of content in this implementation guide{% endcapture %}
+    {{ grouping_desc | markdownify}}</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-AgeRanges.html" title="Library/AgeRanges">Age Ranges</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-FHIRCommon.html" title="Library/FHIRCommon">FHIR Common</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-HIVSimpleAgeGroup.html" title="Library/HIVSimpleAgeGroup">HIVSimpleAgeGroup</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-HIVSimpleCondition.html"
+                     title="Library/HIVSimpleCondition">HIVSimpleCondition</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-HIVSimpleDemog.html" title="Library/HIVSimpleDemog">HIVSimpleDemog</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-HIVSimpleGender.html" title="Library/HIVSimpleGender">HIVSimpleGender</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-HIVSimpleTestResult.html"
+                     title="Library/HIVSimpleTestResult">HIVSimpleTestResult</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Library-HIVSimpleViralLoad.html"
+                     title="Library/HIVSimpleViralLoad">HIVSimpleViralLoad</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Knowledge Artifacts: Measure </h3>
+   <p>{% capture grouping_desc %}These define measures as part of content in this implementation guide{% endcapture %}
+    {{ grouping_desc | markdownify}}</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Measure-HIVSimpleAgeGroup.html" title="Measure/HIVSimpleAgeGroup">HIVSimpleAgeGroup</a>
+               </td>
+               <td>{% capture desc %}HIVSimpleAgeGroup{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Measure-HIVSimpleCondition.html"
+                     title="Measure/HIVSimpleCondition">HIVSimpleCondition</a>
+               </td>
+               <td>{% capture desc %}HIVSimpleCondition{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Measure-HIVSimpleDemog.html" title="Measure/HIVSimpleDemog">HIVSimpleDemog</a>
+               </td>
+               <td>{% capture desc %}HIVSimpleDemog{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Measure-HIVSimpleGender.html" title="Measure/HIVSimpleGender">HIVSimpleGender</a>
+               </td>
+               <td>{% capture desc %}HIVSimpleGender{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Measure-HIVSimpleTestResult.html"
+                     title="Measure/HIVSimpleTestResult">HIVSimpleTestResult</a>
+               </td>
+               <td>{% capture desc %}HIVSimpleTestResult{% endcapture %}
+{{ desc | markdownify}}</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Measure-HIVSimpleViralLoad.html"
+                     title="Measure/HIVSimpleViralLoad">HIVSimpleViralLoad</a>
+               </td>
+               <td>{% capture desc %}HIVSimpleViralLoad{% endcapture %}
 {{ desc | markdownify}}</td>
             </tr>
          </tbody>

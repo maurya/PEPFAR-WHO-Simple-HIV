@@ -6,7 +6,7 @@
   "title": "Gender values",
   "description": "Codes describing the gender of the client",
   "version": "0.1.0",
-  "url": "http://regenstrief.org/fhir/ValueSet/HIVGender",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVGender",
   "compose": {
     "include": [
       {

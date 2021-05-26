@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://regenstrief.org/fhir/StructureDefinition/Observation-Key-Pop",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-Key-Pop",
   "version": "0.1.0",
   "name": "Observation_Key_Pop",
   "title": "Observation - Key Population",
@@ -95,7 +95,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://regenstrief.org/fhir/ValueSet/KeyPopValues"
+          "valueSet": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/KeyPopValues"
         }
       }
     ]

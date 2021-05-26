@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:MedicationStatement</sch:title>
     <sch:rule context="f:MedicationStatement">
-      <sch:assert test="count(f:extension[@url = 'http://regenstrief.org/fhir/StructureDefinition/ARTStartType']) &lt;= 1">extension with URL = 'http://regenstrief.org/fhir/StructureDefinition/ARTStartType': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/ARTStartType']) &lt;= 1">extension with URL = 'https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/ARTStartType': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

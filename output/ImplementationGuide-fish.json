@@ -3,14 +3,14 @@
   "id": "fish",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SimpleHIVImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://regenstrief.org/fhir/ImplementationGuide/fish</pre><div><p>Simple HIV Implementation Guide for CQL Testing (non-normative)</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SimpleHIVImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ImplementationGuide/fish</pre><div><p>Simple HIV Implementation Guide for CQL Testing (non-normative)</p>\n</div></div>"
   },
-  "url": "http://regenstrief.org/fhir/ImplementationGuide/fish",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ImplementationGuide/fish",
   "version": "0.1.0",
   "name": "SimpleHIVImplementationGuide",
   "title": "Simple HIV Implementation Guide",
   "status": "draft",
-  "date": "2021-04-13T10:27:50-04:00",
+  "date": "2021-05-04T11:59:09-04:00",
   "contact": [
     {
       "name": "Joseph Amlung",
@@ -91,6 +91,19 @@
           {
             "url": "value",
             "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-binary"
+          },
+          {
+            "url": "value",
+            "valueString": "input/cql/"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -194,7 +207,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://regenstrief.org/fhir/history.html"
+            "valueString": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -499,6 +512,194 @@
         },
         "name": "HIV Extended Codes",
         "description": "Codes defined only in this Implementation Guide and require mapping to a standard semantic terminology.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/AgeRanges"
+        },
+        "name": "Age Ranges",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/FHIRCommon"
+        },
+        "name": "FHIR Common",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/HIVSimpleAgeGroup"
+        },
+        "name": "HIVSimpleAgeGroup",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/HIVSimpleCondition"
+        },
+        "name": "HIVSimpleCondition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/HIVSimpleDemog"
+        },
+        "name": "HIVSimpleDemog",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/HIVSimpleGender"
+        },
+        "name": "HIVSimpleGender",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/HIVSimpleTestResult"
+        },
+        "name": "HIVSimpleTestResult",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/HIVSimpleViralLoad"
+        },
+        "name": "HIVSimpleViralLoad",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/HIVSimpleAgeGroup"
+        },
+        "name": "HIVSimpleAgeGroup",
+        "description": "HIVSimpleAgeGroup",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/HIVSimpleCondition"
+        },
+        "name": "HIVSimpleCondition",
+        "description": "HIVSimpleCondition",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/HIVSimpleDemog"
+        },
+        "name": "HIVSimpleDemog",
+        "description": "HIVSimpleDemog",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/HIVSimpleGender"
+        },
+        "name": "HIVSimpleGender",
+        "description": "HIVSimpleGender",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/HIVSimpleTestResult"
+        },
+        "name": "HIVSimpleTestResult",
+        "description": "HIVSimpleTestResult",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/HIVSimpleViralLoad"
+        },
+        "name": "HIVSimpleViralLoad",
+        "description": "HIVSimpleViralLoad",
         "exampleBoolean": false
       }
     ],

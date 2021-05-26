@@ -18,12 +18,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://regenstrief.org/fhir/StructureDefinition/Observation-HIV-Status"/>
+  <url value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-HIV-Status"/>
   <version value="0.1.0"/>
   <name value="Observation_HIV_Status"/>
   <title value="Observation - HIV Status"/>
   <status value="active"/>
-  <date value="2021-04-13T10:27:50-04:00"/>
+  <date value="2021-05-04T11:59:09-04:00"/>
   <contact>
     <name value="Joseph Amlung"/>
     <telecom>
@@ -1087,7 +1087,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://regenstrief.org/fhir/ValueSet/HIVStatusValues"/>
+        <valueSet value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVStatusValues"/>
       </binding>
       <mapping>
         <identity value="sct-concept"/>
@@ -2301,7 +2301,7 @@
       <max value="1"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://regenstrief.org/fhir/ValueSet/HIVStatusValues"/>
+        <valueSet value="https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVStatusValues"/>
       </binding>
     </element>
   </differential>

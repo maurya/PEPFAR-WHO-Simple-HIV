@@ -6,7 +6,7 @@
   "title": "HIV Status values",
   "description": "Codes describing whether the client received a positive HIV test result",
   "version": "0.1.0",
-  "url": "http://regenstrief.org/fhir/ValueSet/HIVStatusValues",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVStatusValues",
   "compose": {
     "include": [
       {

@@ -6,7 +6,7 @@
   "title": "Key Population values",
   "description": "Codes describing the type of  key population that the client is included in",
   "version": "0.1.0",
-  "url": "http://regenstrief.org/fhir/ValueSet/KeyPopValues",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/KeyPopValues",
   "compose": {
     "include": [
       {

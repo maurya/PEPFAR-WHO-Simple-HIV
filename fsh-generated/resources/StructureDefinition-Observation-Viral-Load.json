@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://regenstrief.org/fhir/StructureDefinition/Observation-Viral-Load",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-Viral-Load",
   "version": "0.1.0",
   "name": "Observation_Viral_Load",
   "title": "Observation - Viral Load Test",
@@ -81,7 +81,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://regenstrief.org/fhir/StructureDefinition/VL-reason"
+              "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/VL-reason"
             ]
           }
         ]

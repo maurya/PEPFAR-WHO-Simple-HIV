@@ -4,7 +4,7 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fish
-canonical: http://regenstrief.org/fhir
+canonical: https://github.com/maurya/PEPFAR-WHO-Simple-HIV
 version: 0.1.0
 name: SimpleHIVImplementationGuide
 title: Simple HIV Implementation Guide
@@ -22,6 +22,7 @@ parameters:
   apply-publisher: true
   apply-contact: true
   show-inherited-invariants: false
+  path-binary: input/cql/
 copyrightYear: 2020+
 releaseLabel: ci-build
 

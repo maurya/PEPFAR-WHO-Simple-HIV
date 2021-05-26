@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "fish",
-  "url": "http://regenstrief.org/fhir/ImplementationGuide/fish",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ImplementationGuide/fish",
   "version": "0.1.0",
   "name": "SimpleHIVImplementationGuide",
   "title": "Simple HIV Implementation Guide",
@@ -136,6 +136,104 @@
         "name": "HIV Extended Codes",
         "description": "Codes defined only in this Implementation Guide and require mapping to a standard semantic terminology.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Library/AgeRanges"
+        },
+        "exampleBoolean": false,
+        "name": "Age Ranges"
+      },
+      {
+        "reference": {
+          "reference": "Library/FHIRCommon"
+        },
+        "exampleBoolean": false,
+        "name": "FHIR Common"
+      },
+      {
+        "reference": {
+          "reference": "Library/HIVSimpleAgeGroup"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleAgeGroup"
+      },
+      {
+        "reference": {
+          "reference": "Library/HIVSimpleCondition"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleCondition"
+      },
+      {
+        "reference": {
+          "reference": "Library/HIVSimpleDemog"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleDemog"
+      },
+      {
+        "reference": {
+          "reference": "Library/HIVSimpleGender"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleGender"
+      },
+      {
+        "reference": {
+          "reference": "Library/HIVSimpleTestResult"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleTestResult"
+      },
+      {
+        "reference": {
+          "reference": "Library/HIVSimpleViralLoad"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleViralLoad"
+      },
+      {
+        "reference": {
+          "reference": "Measure/HIVSimpleAgeGroup"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleAgeGroup"
+      },
+      {
+        "reference": {
+          "reference": "Measure/HIVSimpleCondition"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleCondition"
+      },
+      {
+        "reference": {
+          "reference": "Measure/HIVSimpleDemog"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleDemog"
+      },
+      {
+        "reference": {
+          "reference": "Measure/HIVSimpleGender"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleGender"
+      },
+      {
+        "reference": {
+          "reference": "Measure/HIVSimpleTestResult"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleTestResult"
+      },
+      {
+        "reference": {
+          "reference": "Measure/HIVSimpleViralLoad"
+        },
+        "exampleBoolean": false,
+        "name": "HIVSimpleViralLoad"
       }
     ],
     "page": {
@@ -170,6 +268,10 @@
       {
         "code": "show-inherited-invariants",
         "value": "false"
+      },
+      {
+        "code": "path-binary",
+        "value": "input/cql/"
       }
     ]
   }

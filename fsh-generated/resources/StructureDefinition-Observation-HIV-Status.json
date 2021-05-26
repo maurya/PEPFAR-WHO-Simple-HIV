@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://regenstrief.org/fhir/StructureDefinition/Observation-HIV-Status",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-HIV-Status",
   "version": "0.1.0",
   "name": "Observation_HIV_Status",
   "title": "Observation - HIV Status",
@@ -95,7 +95,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://regenstrief.org/fhir/ValueSet/HIVStatusValues"
+          "valueSet": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVStatusValues"
         }
       }
     ]

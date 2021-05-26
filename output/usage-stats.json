@@ -4,7 +4,7 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://regenstrief.org/fhir/StructureDefinition/ARTStartType",
+      "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/ARTStartType",
       "title": "ART Start Type",
       "types": [
         "CodeableConcept",
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "url": "http://regenstrief.org/fhir/StructureDefinition/VL-reason",
+      "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/VL-reason",
       "title": "Reason for HIV viral load test",
       "types": [
         "CodeableConcept",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "url": "http://regenstrief.org/fhir/StructureDefinition/estimatedAge",
+      "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/estimatedAge",
       "title": "Estimated Age",
       "types": [
         "integer"
@@ -30,27 +30,27 @@
   "profiles": {
     "MedicationStatement": [
       {
-        "url": "http://regenstrief.org/fhir/StructureDefinition/HIV-MedStatement",
+        "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/HIV-MedStatement",
         "title": "HIV MedicationStatement - ART"
       }
     ],
     "Patient": [
       {
-        "url": "http://regenstrief.org/fhir/StructureDefinition/HIV-patient",
+        "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/HIV-patient",
         "title": "HIV Patient"
       }
     ],
     "Observation": [
       {
-        "url": "http://regenstrief.org/fhir/StructureDefinition/Observation-HIV-Status",
+        "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-HIV-Status",
         "title": "Observation - HIV Status"
       },
       {
-        "url": "http://regenstrief.org/fhir/StructureDefinition/Observation-Key-Pop",
+        "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-Key-Pop",
         "title": "Observation - Key Population"
       },
       {
-        "url": "http://regenstrief.org/fhir/StructureDefinition/Observation-Viral-Load",
+        "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-Viral-Load",
         "title": "Observation - Viral Load Test"
       }
     ]
@@ -98,13 +98,13 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://regenstrief.org/fhir/StructureDefinition/ARTStartType": [
+    "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/ARTStartType": [
       "MedicationStatement"
     ],
-    "http://regenstrief.org/fhir/StructureDefinition/VL-reason": [
+    "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/VL-reason": [
       "Observation"
     ],
-    "http://regenstrief.org/fhir/StructureDefinition/estimatedAge": [
+    "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/estimatedAge": [
       "Patient"
     ]
   }

@@ -1,26 +1,26 @@
 {
   "path": "http://hl7.org/fhir/R4/",
-  "canonical": "http://regenstrief.org/fhir",
+  "canonical": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV",
   "igId": "fish",
   "igName": "SimpleHIVImplementationGuide",
   "packageId": "fish",
   "igVer": "0.1.0",
-  "errorCount": 6,
+  "errorCount": 33,
   "version": "4.0.1",
   "revision": "a53ec6ee1b",
   "versionFull": "4.0.1-a53ec6ee1b",
   "toolingVersion": "4.5.0",
   "toolingRevision": "3",
   "toolingVersionFull": "4.5.0 (3)",
-  "totalFiles": 15,
-  "processedFiles": 24,
-  "genDate": "Tue, Apr 13, 2021 10:27-0400",
-  "genDay": "13/04/2021",
+  "totalFiles": 29,
+  "processedFiles": 39,
+  "genDate": "Tue, May 4, 2021 11:59-0400",
+  "genDay": "04/05/2021",
   "ig": {
     "id": "fish",
     "name": "SimpleHIVImplementationGuide",
     "title": "Simple HIV Implementation Guide",
-    "url": "http://regenstrief.org/fhir/ImplementationGuide/fish",
+    "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ImplementationGuide/fish",
     "version": "0.1.0",
     "status": "draft",
     "experimental": false,
@@ -33,7 +33,7 @@
         ]
       }
     ],
-    "date": "2021-04-13T10:27:50-04:00",
+    "date": "2021-05-04T11:59:09-04:00",
     "description": "Simple HIV Implementation Guide for CQL Testing (non-normative)",
     "fhirVersion": "4.0.1"
   }

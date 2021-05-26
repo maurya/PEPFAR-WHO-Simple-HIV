@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://regenstrief.org/fhir/StructureDefinition/HIV-patient",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/HIV-patient",
   "version": "0.1.0",
   "name": "HIV_Patient",
   "title": "HIV Patient",
@@ -76,7 +76,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://regenstrief.org/fhir/StructureDefinition/estimatedAge"
+              "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/estimatedAge"
             ]
           }
         ]
@@ -86,7 +86,7 @@
         "path": "Patient.gender",
         "binding": {
           "strength": "required",
-          "valueSet": "http://regenstrief.org/fhir/ValueSet/HIVGender"
+          "valueSet": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVGender"
         }
       }
     ]

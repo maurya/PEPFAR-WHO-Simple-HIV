@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://regenstrief.org/fhir/ImplementationGuide/fish> a fhir:ImplementationGuide;
+<https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ImplementationGuide/fish> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "fish"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SimpleHIVImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://regenstrief.org/fhir/ImplementationGuide/fish</pre><div><p>Simple HIV Implementation Guide for CQL Testing (non-normative)</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SimpleHIVImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ImplementationGuide/fish</pre><div><p>Simple HIV Implementation Guide for CQL Testing (non-normative)</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://regenstrief.org/fhir/ImplementationGuide/fish"];
+  fhir:ImplementationGuide.url [ fhir:value "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ImplementationGuide/fish"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "SimpleHIVImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Simple HIV Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-04-13T10:27:50-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-05-04T11:59:09-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Joseph Amlung" ];
@@ -100,11 +100,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+         fhir:Extension.valueString [ fhir:value "path-binary" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "input/cql/" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -112,11 +112,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+         fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -128,11 +128,23 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
        fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -144,7 +156,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -156,7 +168,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -168,7 +180,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -180,7 +192,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -188,11 +200,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://regenstrief.org/fhir/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -204,7 +216,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -216,7 +228,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -228,7 +240,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -240,7 +252,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -252,7 +264,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -264,7 +276,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -276,7 +288,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -296,7 +308,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/StructureDefinition/HIV-MedStatement>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/HIV-MedStatement>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/HIV-MedStatement" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV MedicationStatement - ART" ];
@@ -310,7 +322,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/StructureDefinition/HIV-patient>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/HIV-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/HIV-patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Patient" ];
@@ -324,7 +336,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/StructureDefinition/Observation-HIV-Status>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-HIV-Status>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Observation-HIV-Status" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - HIV Status" ];
@@ -338,7 +350,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/StructureDefinition/Observation-Key-Pop>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-Key-Pop>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Observation-Key-Pop" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Key Population" ];
@@ -352,7 +364,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/StructureDefinition/Observation-Viral-Load>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/Observation-Viral-Load>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Observation-Viral-Load" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation - Viral Load Test" ];
@@ -366,7 +378,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/StructureDefinition/ARTStartType>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/ARTStartType>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ARTStartType" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ART Start Type" ];
@@ -380,7 +392,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/StructureDefinition/estimatedAge>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/estimatedAge>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/estimatedAge" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estimated Age" ];
@@ -394,7 +406,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/StructureDefinition/VL-reason>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/VL-reason>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/VL-reason" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reason for HIV viral load test" ];
@@ -408,7 +420,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/ValueSet/ARTStartTypeValues>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/ARTStartTypeValues>;
          fhir:Reference.reference [ fhir:value "ValueSet/ARTStartTypeValues" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ART Start Type values" ];
@@ -422,7 +434,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/ValueSet/HIVGender>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVGender>;
          fhir:Reference.reference [ fhir:value "ValueSet/HIVGender" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gender values" ];
@@ -436,7 +448,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/ValueSet/HIVStatusValues>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/HIVStatusValues>;
          fhir:Reference.reference [ fhir:value "ValueSet/HIVStatusValues" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Status values" ];
@@ -450,7 +462,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/ValueSet/KeyPopValues>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/KeyPopValues>;
          fhir:Reference.reference [ fhir:value "ValueSet/KeyPopValues" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Key Population values" ];
@@ -464,7 +476,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/ValueSet/VLReasonValues>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/VLReasonValues>;
          fhir:Reference.reference [ fhir:value "ValueSet/VLReasonValues" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reason for HIV viral load test values" ];
@@ -478,11 +490,199 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://regenstrief.org/fhir/CodeSystem/HIVExtendedCodes>;
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/CodeSystem/HIVExtendedCodes>;
          fhir:Reference.reference [ fhir:value "CodeSystem/HIVExtendedCodes" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Extended Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes defined only in this Implementation Guide and require mapping to a standard semantic terminology." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Library" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Library/AgeRanges>;
+         fhir:Reference.reference [ fhir:value "Library/AgeRanges" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Age Ranges" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Library" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Library/FHIRCommon>;
+         fhir:Reference.reference [ fhir:value "Library/FHIRCommon" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FHIR Common" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Library" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Library/HIVSimpleAgeGroup>;
+         fhir:Reference.reference [ fhir:value "Library/HIVSimpleAgeGroup" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleAgeGroup" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Library" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Library/HIVSimpleCondition>;
+         fhir:Reference.reference [ fhir:value "Library/HIVSimpleCondition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleCondition" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Library" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Library/HIVSimpleDemog>;
+         fhir:Reference.reference [ fhir:value "Library/HIVSimpleDemog" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleDemog" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Library" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Library/HIVSimpleGender>;
+         fhir:Reference.reference [ fhir:value "Library/HIVSimpleGender" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleGender" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Library" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Library/HIVSimpleTestResult>;
+         fhir:Reference.reference [ fhir:value "Library/HIVSimpleTestResult" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleTestResult" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Library" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Library/HIVSimpleViralLoad>;
+         fhir:Reference.reference [ fhir:value "Library/HIVSimpleViralLoad" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleViralLoad" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Measure/HIVSimpleAgeGroup>;
+         fhir:Reference.reference [ fhir:value "Measure/HIVSimpleAgeGroup" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleAgeGroup" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIVSimpleAgeGroup" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Measure/HIVSimpleCondition>;
+         fhir:Reference.reference [ fhir:value "Measure/HIVSimpleCondition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleCondition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIVSimpleCondition" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Measure/HIVSimpleDemog>;
+         fhir:Reference.reference [ fhir:value "Measure/HIVSimpleDemog" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleDemog" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIVSimpleDemog" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Measure/HIVSimpleGender>;
+         fhir:Reference.reference [ fhir:value "Measure/HIVSimpleGender" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleGender" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIVSimpleGender" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Measure/HIVSimpleTestResult>;
+         fhir:Reference.reference [ fhir:value "Measure/HIVSimpleTestResult" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleTestResult" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIVSimpleTestResult" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://github.com/maurya/PEPFAR-WHO-Simple-HIV/Measure/HIVSimpleViralLoad>;
+         fhir:Reference.reference [ fhir:value "Measure/HIVSimpleViralLoad" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIVSimpleViralLoad" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIVSimpleViralLoad" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -561,7 +761,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://regenstrief.org/fhir/ImplementationGuide/fish.ttl> a owl:Ontology;
+<https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ImplementationGuide/fish.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

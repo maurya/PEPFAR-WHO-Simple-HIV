@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ARTStartType",
-  "url": "http://regenstrief.org/fhir/StructureDefinition/ARTStartType",
+  "url": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/ARTStartType",
   "version": "0.1.0",
   "name": "ARTStartType",
   "title": "ART Start Type",
@@ -42,7 +42,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://regenstrief.org/fhir/StructureDefinition/ARTStartType"
+        "fixedUri": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/StructureDefinition/ARTStartType"
       },
       {
         "id": "Extension.value[x]",
@@ -70,7 +70,7 @@
         "max": "1",
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://regenstrief.org/fhir/ValueSet/ARTStartTypeValues"
+          "valueSet": "https://github.com/maurya/PEPFAR-WHO-Simple-HIV/ValueSet/ARTStartTypeValues"
         }
       }
     ]
