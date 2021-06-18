@@ -1,0 +1,52 @@
+{
+  "resourceType": "Bundle",
+  "id": "openmrs-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+        "resourceType": "Patient",
+          "id": "492581f9-e592-4aea-b3f6-1438765f042a",
+          "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>492581f9-e592-4aea-b3f6-1438765f042a</td></tr><tr><td>Identifier:</td><td><div>100C</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Third <b>PATIENT </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>07/06/1981</td></tr><tr><td>Deceased:</td><td>false</td></tr></tbody></table></div>"
+          },
+          "identifier": [
+              {
+                  "id": "759571e6-c118-4a21-8e23-2f1a3b8d23b0",
+                  "extension": [
+                      {
+                          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+                          "valueReference": {
+                              "reference": "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+                              "type": "Location",
+                              "display": "Unknown Location"
+                          }
+                      }
+                  ],
+                  "use": "official",
+                  "type": {
+                      "text": "Old Identification Number"
+                  },
+                  "value": "100C"
+              }
+          ],
+          "active": true,
+          "name": [
+              {
+                  "id": "ec46c61c-5cfb-4b55-9db7-7ff7cde7064d",
+                  "family": "Patient",
+                  "given": [
+                      "Third"
+                  ]
+              }
+          ],
+          "gender": "female",
+          "birthDate": "1981-06-07",
+          "deceasedBoolean": false
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/492581f9-e592-4aea-b3f6-1438765f042a"
+    }
+  }]
+}
