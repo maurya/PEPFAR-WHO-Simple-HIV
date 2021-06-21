@@ -2,51 +2,178 @@
   "resourceType": "Bundle",
   "id": "openmrs-bundle",
   "type": "transaction",
-  "entry": [ {
+  "entry": [{
     "resource": {
-        "resourceType": "Patient",
-          "id": "492581f9-e592-4aea-b3f6-1438765f042a",
-          "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>492581f9-e592-4aea-b3f6-1438765f042a</td></tr><tr><td>Identifier:</td><td><div>100C</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Third <b>PATIENT </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>07/06/1981</td></tr><tr><td>Deceased:</td><td>false</td></tr></tbody></table></div>"
-          },
-          "identifier": [
-              {
-                  "id": "759571e6-c118-4a21-8e23-2f1a3b8d23b0",
-                  "extension": [
-                      {
-                          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
-                          "valueReference": {
-                              "reference": "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
-                              "type": "Location",
-                              "display": "Unknown Location"
-                          }
-                      }
-                  ],
-                  "use": "official",
-                  "type": {
-                      "text": "Old Identification Number"
-                  },
-                  "value": "100C"
-              }
-          ],
-          "active": true,
-          "name": [
-              {
-                  "id": "ec46c61c-5cfb-4b55-9db7-7ff7cde7064d",
-                  "family": "Patient",
-                  "given": [
-                      "Third"
-                  ]
-              }
-          ],
-          "gender": "female",
-          "birthDate": "1981-06-07",
-          "deceasedBoolean": false
+      "resourceType": "Patient",
+      "id": "492581f9-e592-4aea-b3f6-1438765f042a",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>492581f9-e592-4aea-b3f6-1438765f042a</td></tr><tr><td>Identifier:</td><td><div>100C</div></td></tr><tr><td>Active:</td><td>true</td></tr><tr><td>Name:</td><td> Third <b>PATIENT </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>07/06/1981</td></tr><tr><td>Deceased:</td><td>false</td></tr></tbody></table></div>"
+      },
+      "identifier": [{
+        "id": "759571e6-c118-4a21-8e23-2f1a3b8d23b0",
+        "extension": [{
+          "url": "http://fhir.openmrs.org/ext/patient/identifier#location",
+          "valueReference": {
+            "reference": "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+            "type": "Location",
+            "display": "Unknown Location"
+          }
+        }],
+        "use": "official",
+        "type": {
+          "text": "Old Identification Number"
+        },
+        "value": "100C"
+      }],
+      "active": true,
+      "name": [{
+        "id": "ec46c61c-5cfb-4b55-9db7-7ff7cde7064d",
+        "family": "Patient",
+        "given": [
+          "Third"
+        ]
+      }],
+      "gender": "female",
+      "birthDate": "1981-06-07",
+      "deceasedBoolean": false
     },
     "request": {
       "method": "PUT",
       "url": "Patient/492581f9-e592-4aea-b3f6-1438765f042a"
     }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "52e5345b-9098-47c4-8bcb-757d722f7311",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>52e5345b-9098-47c4-8bcb-757d722f7311</td></tr><tr><td>Status:</td><td>FINAL</td></tr><tr><td>Code:</td><td> HUMAN IMMUNODEFICIENCY VIRUS (HIV) DISEASE </td></tr><tr><td>Subject:</td><td><a href=\"http://localhost:8080/openmrs/ws/fhir2/R4/Patient/492581f9-e592-4aea-b3f6-1438765f042a\">Third Patient (Old Identification Number: 100C)</a></td></tr><tr><td>Encounter:</td><td><a href=\"http://localhost:8080/openmrs/ws/fhir2/R4/Encounter/9ded6fff-6d9b-45a1-b1db-e3ec4b1d6e07\">Encounter/9ded6fff-6d9b-45a1-b1db-e3ec4b1d6e07</a></td></tr><tr><td>Effective:</td><td> 18 June 2021 00:00:00 </td></tr><tr><td>Issued:</td><td>18/06/2021 04:33:14 PM</td></tr><tr><td>Value:</td><td> True </td></tr></tbody></table></div>"
+      },
+      "status": "final",
+      "code": {
+        "coding": [{
+          "code": "f700f529-7024-469f-9e1a-d9a64aa37fe5",
+          "display": "HUMAN IMMUNODEFICIENCY VIRUS (HIV) DISEASE"
+        }]
+      },
+      "subject": {
+        "reference": "Patient/492581f9-e592-4aea-b3f6-1438765f042a",
+        "type": "Patient",
+        "display": "Third Patient (Old Identification Number: 100C)"
+      },
+      "encounter": {
+        "reference": "Encounter/9ded6fff-6d9b-45a1-b1db-e3ec4b1d6e07",
+        "type": "Encounter"
+      },
+      "effectiveDateTime": "2021-06-18T00:00:00-04:00",
+      "issued": "2021-06-18T16:33:14.000-04:00",
+      "valueCodeableConcept": {
+        "coding": [{
+          "code": "d57ee217-fabe-4577-bf8f-285fb6120e21",
+          "display": "True"
+        }]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/52e5345b-9098-47c4-8bcb-757d722f7311"
+    }
+
+  }, {
+    "resource": {
+      "resourceType": "Practitioner",
+      "id": "56fdf144-7f81-44b8-b171-a82331f041d5",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>56fdf144-7f81-44b8-b171-a82331f041d5</td></tr><tr><td>Identifier:</td><td><div>P1</div></td></tr><tr><td>Name:</td><td> First <b>DOCTOR </b></td></tr><tr><td>Gender:</td><td>FEMALE</td></tr><tr><td>Birth Date:</td><td>08/06/1977</td></tr></tbody></table></div>"
+      },
+      "identifier": [{
+        "system": "http://fhir.openmrs.org/ext/provider/identifier",
+        "value": "P1"
+      }],
+      "active": false,
+      "name": [{
+        "id": "6bbc1f3d-2c05-4d9b-afe0-e05abf287f14",
+        "family": "Doctor",
+        "given": [
+          "First"
+        ]
+      }],
+      "gender": "female",
+      "birthDate": "1977-06-08"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Practitioner/56fdf144-7f81-44b8-b171-a82331f041d5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "9ded6fff-6d9b-45a1-b1db-e3ec4b1d6e07",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Id:</td><td>9ded6fff-6d9b-45a1-b1db-e3ec4b1d6e07</td></tr><tr><td>Status:</td><td>UNKNOWN</td></tr><tr><td>Class:</td><td> (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode ) </td></tr><tr><td>Subject:</td><td><a href=\"http://localhost:8080/openmrs/ws/fhir2/R4/Patient/492581f9-e592-4aea-b3f6-1438765f042a\">Third Patient (Old Identification Number: 100C)</a></td></tr><tr><td>Participants:</td><td><table class=\"subPropertyTable\"><tbody><tr><th>-</th><th>Type</th><th>Period</th><th>Individual</th></tr><tr><td>1</td><td/><td/><td><a href=\"http://localhost:8080/openmrs/ws/fhir2/R4/Practitioner/56fdf144-7f81-44b8-b171-a82331f041d5\">First Doctor (Identifier: P1)</a></td></tr></tbody></table></td></tr><tr><td>Location:</td><td><table class=\"subPropertyTable\"><tbody><tr><th>-</th><th>Location</th><th>Status</th><th>Physical Type</th><th>Period</th></tr><tr><td>1</td><td><a href=\"http://localhost:8080/openmrs/ws/fhir2/R4/Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f\">Unknown Location</a></td><td/><td/><td/></tr></tbody></table></td></tr></tbody></table></div>"
+      },
+      "status": "unknown",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "subject": {
+        "reference": "Patient/492581f9-e592-4aea-b3f6-1438765f042a",
+        "type": "Patient",
+        "display": "Third Patient (Old Identification Number: 100C)"
+      },
+      "participant": [{
+        "individual": {
+          "reference": "Practitioner/56fdf144-7f81-44b8-b171-a82331f041d5",
+          "type": "Practitioner",
+          "identifier": {
+            "value": "P1"
+          },
+          "display": "First Doctor (Identifier: P1)"
+        }
+      }],
+      "location": [{
+        "location": {
+          "reference": "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+          "type": "Location",
+          "display": "Unknown Location"
+        }
+      }]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/9ded6fff-6d9b-45a1-b1db-e3ec4b1d6e07"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Location",
+      "id": "8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Unknown Location</h2><h2/></div>"
+      },
+      "status": "active",
+      "name": "Unknown Location",
+      "address": {
+        "extension": [{
+          "url": "http://fhir.openmrs.org/ext/address",
+          "extension": [{
+              "url": "http://fhir.openmrs.org/ext/address#address1"
+            },
+            {
+              "url": "http://fhir.openmrs.org/ext/address#address2"
+            }
+          ]
+        }]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
+    }
+
   }]
 }
